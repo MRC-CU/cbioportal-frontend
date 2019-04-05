@@ -9,7 +9,6 @@ import 'react-select/dist/react-select.css';
 import {CancerStudyQueryUrlParams, QueryStore} from "../../shared/components/query/QueryStore";
 import QueryAndDownloadTabs from "../../shared/components/query/QueryAndDownloadTabs";
 import {PageLayout} from "../../shared/components/PageLayout/PageLayout";
-import RightBar from "../../shared/components/rightbar/RightBar";
 import getBrowserWindow from "../../shared/lib/getBrowserWindow";
 // tslint:disable-next-line:no-import-side-effect
 import "./homePage.scss";
@@ -34,7 +33,7 @@ export function createQueryStore(currentQuery?:any) {
     const win:any = window;
 
     const queryStore = new QueryStore(currentQuery);
-    
+
     queryStore.singlePageAppSubmitRoutine = function(query:CancerStudyQueryUrlParams) {
 
         // normalize this
@@ -77,7 +76,7 @@ export default class HomePage extends React.Component<IResultsViewPageProps, {}>
     public render() {
 
         return (
-            <PageLayout className="homePageLayout" noMargin={true} rightBar={<RightBar queryStore={this.queryStore} />}>
+            <PageLayout className="homePageLayout" noMargin={true} hideFooter={true}>
 
                 <div className={"skinBlurb"} dangerouslySetInnerHTML={{__html:AppConfig.serverConfig.skin_blurb!}}></div>
                 <QueryAndDownloadTabs getQueryStore={this.getQueryStore} showQuickSearchTab={AppConfig.serverConfig.quick_search_enabled} showDownloadTab={true}/>
