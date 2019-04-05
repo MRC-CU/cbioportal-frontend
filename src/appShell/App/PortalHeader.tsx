@@ -14,7 +14,7 @@ export default class PortalHeader extends React.Component<{ appStore:AppStore },
     private tabs(){
 
         return [
-
+/***
             {
                 id:"datasets",
                 text:"Data Sets",
@@ -78,7 +78,7 @@ export default class PortalHeader extends React.Component<{ appStore:AppStore },
                 internal:true,
                 hide:()=>AppConfig.serverConfig.skin_show_about_tab === false
             },
-
+***/
         ];
 
 
