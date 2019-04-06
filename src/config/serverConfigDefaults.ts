@@ -64,19 +64,19 @@ const ServerConfigDefaults: Partial<IServerConfig> = {
         "tgct_tcga_pan_can_atlas_2018,thym_tcga_pan_can_atlas_2018,thca_tcga_pan_can_atlas_2018,ucs_tcga_pan_can_atlas_2018," +
         "ucec_tcga_pan_can_atlas_2018,uvm_tcga_pan_can_atlas_2018",
     default_cross_cancer_study_list_name: "TCGA PanCancer Atlas studies",
-    skin_title:"cBioPortal for Cancer Genomics",
+    skin_title:"OCCAMS cBioPortal",
 
-    skin_blurb:`The cBioPortal for Cancer Genomics provides 
+    skin_blurb:`The cBioPortal for Cancer Genomics provides
         <b>visualization</b>, <b>analysis</b> and <b>download</b> of large-scale cancer genomics data sets.
-        <p><b>Please cite</b> <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23550210\">Gao 
-        et al. <i>Sci. Signal.</i> 2013</a> &amp; 
+        <p><b>Please cite</b> <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23550210\">Gao
+        et al. <i>Sci. Signal.</i> 2013</a> &amp;
         <a href=\"http://cancerdiscovery.aacrjournals.org/content/2/5/401.abstract\">
         Cerami et al. <i>Cancer Discov.</i> 2012</a> when publishing results based on cBioPortal.</p>`,
 
-    skin_data_sets_footer:`Data sets of TCGA studies were downloaded from Broad 
-            Firehose (http://gdac.broadinstitute.org) and updated monthly. In some studies, data sets were from the 
+    skin_data_sets_footer:`Data sets of TCGA studies were downloaded from Broad
+            Firehose (http://gdac.broadinstitute.org) and updated monthly. In some studies, data sets were from the
             TCGA working groups directly.`,
-    skin_data_sets_header:`The portal currently contains data from the following 
+    skin_data_sets_header:`The portal currently contains data from the following
             cancer genomics studies.  The table below lists the number of available samples per data type and tumor.`,
 
     skin_example_study_queries: `tcga pancancer atlas\n
@@ -146,4 +146,3 @@ const ServerConfigDefaults: Partial<IServerConfig> = {
 };
 
 export default ServerConfigDefaults;
-
