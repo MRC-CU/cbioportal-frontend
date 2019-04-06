@@ -31,7 +31,7 @@ const ServerConfigDefaults: Partial<IServerConfig> = {
     show_genomenexus:true,
     skin_authorization_message:"Access to this portal is only available to authorized users.",
     skin_documentation_about:"About-Us.md",
-    skin_documentation_baseurl:"https://raw.githubusercontent.com/cBioPortal/cbioportal/master/docs/",
+    skin_documentation_baseurl:"https://raw.githubusercontent.com/MRC-CU/cbioportal-mrc-cu-esad/occams_mar2019/docs/",
     skin_documentation_markdown:true,
     skin_email_contact:"cbioportal at googlegroups dot com",
     skin_documentation_faq:"FAQ.md",
