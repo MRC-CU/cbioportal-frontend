@@ -14,63 +14,6 @@ export default class PortalHeader extends React.Component<{ appStore:AppStore },
     private tabs(){
 
         return [
-/***
-            {
-                id:"datasets",
-                text:"Data Sets",
-                address:"/datasets",
-                internal:true,
-                hide:()=>AppConfig.serverConfig.skin_show_data_tab === false
-            },
-
-            {
-                id:"webAPI",
-                text:"Web API",
-                address:"/webAPI",
-                internal:true,
-                hide:()=>AppConfig.serverConfig.skin_show_web_api_tab === false
-            },
-
-            {
-                id:"rMatlab",
-                text:"R/MATLAB",
-                address:"/rmatlab",
-                internal:true,
-                hide:()=>AppConfig.serverConfig.skin_show_r_matlab_tab === false
-            },
-
-            {
-                id:"tutorials",
-                text:"Tutorials",
-                address:"/tutorials",
-                internal:true,
-                hide:()=>AppConfig.serverConfig.skin_show_tutorials_tab === false
-            },
-
-            {
-                id:"faq",
-                text:"FAQ",
-                address:"/faq",
-                internal:true,
-                hide:()=>AppConfig.serverConfig.skin_show_faqs_tab === false
-            },
-
-            {
-                id:"news",
-                text:"News",
-                address:"/news",
-                internal:true,
-                hide:()=>AppConfig.serverConfig.skin_show_news_tab === false
-            },
-
-            {
-                id:"visualize",
-                text:"Visualize Your Data",
-                address:"/visualize",
-                internal:true,
-                hide:()=>AppConfig.serverConfig.skin_show_tools_tab === false
-            },
-
             {
                 id:"about",
                 text:"About",
@@ -78,7 +21,6 @@ export default class PortalHeader extends React.Component<{ appStore:AppStore },
                 internal:true,
                 hide:()=>AppConfig.serverConfig.skin_show_about_tab === false
             },
-***/
         ];
 
 
