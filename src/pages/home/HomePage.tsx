@@ -78,7 +78,7 @@ export default class HomePage extends React.Component<IResultsViewPageProps, {}>
         return (
             <PageLayout className="homePageLayout" noMargin={true} hideFooter={true}>
 
-                <QueryAndDownloadTabs getQueryStore={this.getQueryStore} showQuickSearchTab={AppConfig.serverConfig.quick_search_enabled} showDownloadTab={true}/>
+                <QueryAndDownloadTabs getQueryStore={this.getQueryStore} showQuickSearchTab={AppConfig.serverConfig.quick_search_enabled} showDownloadTab={false}/>
 
             </PageLayout>
         )
