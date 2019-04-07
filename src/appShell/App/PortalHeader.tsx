@@ -50,13 +50,6 @@ export default class PortalHeader extends React.Component<{ appStore:AppStore },
                   <br />
                   incorporating International Cancer Genome Consortium (ICGC)
                 </div>
-                <nav id="main-nav">
-                    <ul>
-                        {
-                           this.getTabs()
-                        }
-                    </ul>
-                </nav>
             </div>
 
             <div id="rightHeaderContent">
