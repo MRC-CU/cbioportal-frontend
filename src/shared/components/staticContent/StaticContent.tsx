@@ -20,7 +20,7 @@ function setImageRoot(path:string){
 export default class StaticContent extends React.Component<{ sourceUrl:string, title?:string, renderers?:{ [k:string]:any } }, {}> {
 
     private get url(){
-        return getDocsUrl(this.props.sourceUrl!, AppConfig.serverConfig.skin_documentation_baseurl!);
+        return getDocsUrl(this.props.sourceUrl!, 'https://raw.githubusercontent.com/MRC-CU/cbioportal-mrc-cu-esad/occams_mar2019/docs/');
     }
 
     readonly source = remoteData<string>(async ()=>{
@@ -51,6 +51,3 @@ export default class StaticContent extends React.Component<{ sourceUrl:string, t
     }
 
 }
-
-
-
