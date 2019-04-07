@@ -21,7 +21,8 @@ header {
 }
 
 .pageTopContainer {
-  background:#eee;
+  /* background:#eee; */
+  background:#9B034A;
   border-bottom: 1px solid #ddd;
 }
 
@@ -57,8 +58,22 @@ header {
 
 #rightHeaderContent {
   display:flex;
-  align-items:center;
+  /* align-items:center; */
   color:#777;
+}
+
+#rightHeaderPoweredByCBioPortal {
+
+}
+#rightHeaderPoweredByCBioPortalText {
+  color: white;
+  opacity: 0.5;
+  line-height: 1.2em !important;
+  font-size: 0.8em;
+}
+#rightHeaderPoweredByCBioPortal img {
+  height: 25px;
+  margin-top: 3px;
 }
 
 #rightHeaderContent .username {
@@ -75,6 +90,13 @@ header {
 #leftHeaderContent {
   display:flex;
   align-items:center;
+}
+
+#leftHeaderContentDescription {
+  color:white;
+  opacity: 0.8;
+  line-height: 1.2em !important;
+  font-size: 0.8em;
 }
 
 .userControls {
@@ -129,16 +151,16 @@ header {
 }
 
 #main-nav li a:link, #main-nav li a:visited {
-  color: #777;
+  color: #fff;
 }
 
 #main-nav li a:hover {
-  color: #000;
+  color: #fff;
   text-decoration:none;
 }
 
 #main-nav li a.selected {
-  color: #3786C2;
+  color: #fff;
   border-bottom: 2px solid #3786C2;
   padding-bottom:4px;
   text-decoration:none !important;
