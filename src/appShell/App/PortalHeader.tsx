@@ -44,7 +44,12 @@ export default class PortalHeader extends React.Component<{ appStore:AppStore },
     render(){
         return <header>
             <div id="leftHeaderContent">
-                <Link to="/" id="cbioportal-logo"><img src={require("./cbioportal_logo.png")} alt="cBioPortal Logo"/></Link>
+                <Link to="/" id="cbioportal-logo"><img src={require("./cbioportal_occams_text_white.png")} alt="OCCAMS Logo"/></Link>
+                <div id="leftHeaderContentDescription">
+                  Oesophageal cancer clinical and molecular stratification (OCCAMS)
+                  <br />
+                  incorporating International Cancer Genome Consortium (ICGC)
+                </div>
                 <nav id="main-nav">
                     <ul>
                         {
@@ -55,6 +60,12 @@ export default class PortalHeader extends React.Component<{ appStore:AppStore },
             </div>
 
             <div id="rightHeaderContent">
+              <div id="rightHeaderPoweredByCBioPortal">
+                <div id="rightHeaderPoweredByCBioPortalText">
+                  Powered by
+                </div>
+                <img src={require("./cbioportal_logo_txt_white.png")} alt="cBioPortal Logo" />
+              </div>
                 <If condition={!AppConfig.hide_login}>
                     <If condition={this.props.appStore.isLoggedIn}>
                         <Then>
