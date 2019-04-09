@@ -85,8 +85,7 @@ window.FRONTEND_COMMIT = COMMIT;
 // window.postLoadForMskCIS = function(){
 //     AppConfig.hide_login = true;
 // }
-
-AppConfig.hide_login = true;
+AppConfig.hide_login = false;
 
 // make sure lodash doesn't overwrite (or set) global underscore
 _.noConflict();
