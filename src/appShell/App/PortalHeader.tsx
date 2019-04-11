@@ -53,32 +53,19 @@ export default class PortalHeader extends React.Component<{ appStore:AppStore },
             </div>
 
             <div id="rightHeaderContent">
+              <div className="identity">Logged in as {this.props.appStore.userName}
+                  <span className="pipeSeperator">|</span>
+                   <a href={buildCBioPortalPageUrl(this.props.appStore.logoutUrl)}>Sign out</a>
+              </div>
               <div id="rightHeaderPoweredByCBioPortal">
                 <div id="rightHeaderPoweredByCBioPortalText">
                   Powered by
                 </div>
                 <img src={require("./cbioportal_logo_txt_white.png")} alt="cBioPortal Logo" />
               </div>
-                <If condition={!AppConfig.hide_login}>
-                    <If condition={this.props.appStore.isLoggedIn}>
-                        <Then>
-                            <div className="identity">Logged in as {this.props.appStore.userName}
-                                <span className="pipeSeperator">|</span>
-                                 <a href={buildCBioPortalPageUrl(this.props.appStore.logoutUrl)}>Sign out</a>
-
-                            </div>
-                        </Then>
-                        <Else>
-                            <If condition={AppConfig.serverConfig.authenticationMethod === "social_auth"}>
-                                <div className="identity"><button className="btn btn-default" onClick={()=>openSocialAuthWindow(this.props.appStore)}>Login</button></div>
-                            </If>
-                        </Else>
-                    </If>
-                </If>
-
-                <If condition={!_.isEmpty(AppConfig.serverConfig.skin_right_logo)}>
-                    <img id="institute-logo" src={`images/${AppConfig.serverConfig.skin_right_logo!}`} alt="Institute Logo" />
-                </If>
+              <If condition={!_.isEmpty(AppConfig.serverConfig.skin_right_logo)}>
+                  <img id="institute-logo" src={`images/${AppConfig.serverConfig.skin_right_logo!}`} alt="Institute Logo" />
+              </If>
 
             </div>
         </header>
